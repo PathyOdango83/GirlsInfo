@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='produtos.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <div class="container_form">
+        <h1>Cadastro de Produtos</h1>
+        <form class="form" action="#" method="post">
+
+            
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome:</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Insira aqui o nome" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="tipo" class="form_label">Tipo:</label>
+                <input type="text" name="tipo" class="form_input" id="tipo" placeholder="Insira aqui o tipo do produto" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="dataEntr" class="form_label">Data de entrada:</label>
+                <input type="date" maxlength="8" name="dataEntr" class="form_input" id="dataEntr" placeholder="Insira aqui a data" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="quantidade" class="form_label">Quantidade:</label>
+                <input type="text" name="quantidade" class="form_input" id="quantidade" placeholder="Entre com a quantidade do produto" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="descrição" class="form_label">Descrição:</label>
+                <input type="descrição" name="descrição" class="form_input" id="descrição" placeholder="Insira aqui a descrição" required>
+            </div>
+
+            
+               
+                <div class="submit">
+                  <input type="hidden" name="acao" value="enviar">
+                  <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+                
+                </div>
+        </form>
+</div><!--container_form-->
+</body>
+</html>

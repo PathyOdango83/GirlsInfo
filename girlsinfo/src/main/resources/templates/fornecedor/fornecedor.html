@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='fornecedor.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <div class="container_form">
+        <h1>Cadastro de Fornecedores</h1>
+        <form class="form" action="#" method="post">
+
+            <input type="hidden"  id="codProd" name="codProd" >  
+            
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome:</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Insira aqui o nome" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="telefone" class="form_label">Telefone:</label>
+                <input type="number" name="telefone" class="form_input" id="telefone" placeholder="Insira aqui o telefone" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="observações" class="form_label">Observações:</label>
+                <input type="text" name="observações" class="form_input" id="observações" placeholder="Insira aqui a informação desejada" required>
+            </div>
+
+            <div class="submit">
+                <input type="hidden" name="acao" value="enviar">
+                <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+              
+              </div>
+        
+</body>
+</html>

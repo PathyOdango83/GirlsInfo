@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='funcionario.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <div class="container_form">
+        <h1>Cadastro de Funcionários</h1>
+        <form class="form" action="#" method="post">  
+            
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome:</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Insira aqui o nome" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="cpf" class="form_label">Cpf:</label>
+                <input type="text" name="cpf" class="form_input" id="cpf" placeholder="Insira aqui o cpf" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="datNasc" class="form_label">Data de Nascimento:</label>
+                <input type="date" name="datNasc" class="form_input" id="datNasc" placeholder="Insira aqui a data de nascimento" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="cargo" class="form_label">Cargo:</label>
+                <input type="text" name="cargo" class="form_input" id="cargo" placeholder="Insira aqui o cargo" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="senha" class="form_label">Senha:</label>
+                <input type="senha" name="senha" class="form_input" id="senha" placeholder="Insira aqui a senha" required>
+            </div>
+            <div class="submit">
+                <input type="hidden" name="acao" value="enviar">
+                <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+              
+              </div>
+</body>
+</html>

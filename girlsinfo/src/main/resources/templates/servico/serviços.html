@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='serviços.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    
+    <div class="container_form">
+        <h1>Cadastro de Serviços</h1>
+        <form class="form" action="#" method="post">  
+            
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome:</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Insira aqui o nome do serviço" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="tipo" class="form_label">Tipo de Serviço:</label>
+                <input type="text" name="tipo" class="form_input" id="tipo" placeholder="Insira aqui o tipo de serviço" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="data" class="form_label">Data de Atendimento:</label>
+                <input type="date" name="data" class="form_input" id="data" placeholder="Insira aqui a data do atendimento" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="local" class="form_label">Local:</label>
+                <input type="text" name="local" class="form_input" id="local" placeholder="Insira aqui o local" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="cpfFunc" class="form_label">Cpf do Funcionário:</label>
+                <input type="cpfFunc" name="cpfFunc" class="form_input" id="cpfFunc" placeholder="Insira aqui o cpf do funcionário" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="nomeCliente" class="form_label">Nome do Cliente:</label>
+                <input type="text" name="nomeCliente" class="form_input" id="nomeCliente" placeholder="Insira aqui o nome do cliente" required>
+            </div>
+
+            <div class="submit">
+                <input type="hidden" name="acao" value="enviar">
+                <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+              
+              </div>
+</body>
+</html>
