@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Cadastro de clientes</title>
+<link rel="stylesheet" type="text/css"  media="screen" href="../resources/static/css/cadcliente.css">
+    <script src="../static/cadcliente.js"></script>
+</head>
+
+div class="container_form">
+        <h1>Formulário de Cadastro de clientes</h1>
+        <form class="form" action="" method="post">
+            
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="sobrenome" class="form_label">Sobrenome</label>
+                <input type="text" name="sobrenome" class="form_input" id="sobrenome" placeholder="Sobrenome" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="endereco" class="form_label">Endereco</label>
+                <input type="text" name="endereco" class="form_input" id="endereco" placeholder="Endereco" required>
+            </div>
+
+            <div class="form_grupo">
+                <label for="cpf" class="form_label">Cpf</label>
+                <input type="number" name="cpf" class="form_input" id="cpf" placeholder="Cpf" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="e-mail" class="form_label">Email</label>
+                <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+            </div>
+                 <br>
+                <div class="submit">
+                  <input type="hidden" name="acao" value="enviar">
+                  <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+                
+                </div>
+        </form>
+
+
+<body>
+  <link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css} "/>
+
+<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+<script th:src="@{/webjars/popper.js/1.12.9-1/umd/popper.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.0.0-2/js/bootstrap.min.js}"></script>
+</body>
+
+</html>
