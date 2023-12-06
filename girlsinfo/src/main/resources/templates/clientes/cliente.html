@@ -12,9 +12,11 @@
     
     <div class="container_form">
         <h1>Cadastro de Clientes</h1>
+         <form method="post" th:action="@{/cliente/novo}"  style="margin: 10px" onsubmit="return confirm ('Confirma a ação ?')" th:object="${ClienteModel}">
+       
         <form class="form" action="#" method="post">
 
-            <input type="hidden"  id="codCli" name="codCli" >  
+            
             
             <div class="form_grupo">
                 <label for="nome_completo" class="form_label">Nome Completo:</label>
@@ -44,7 +46,6 @@
             
                
                 <div class="submit">
-                  <input type="hidden" name="acao" value="enviar">
                   <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
                 
                 </div>
