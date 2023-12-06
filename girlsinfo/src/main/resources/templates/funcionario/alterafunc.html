@@ -7,12 +7,12 @@
 <div class="container-fluid">
 
   <!-- Page Heading -->
-  <h1 class="h3 mb-2 text-gray-800">Alterar funcionario</h1>
+  <h1 class="h3 mb-2 text-gray-800">Alterar cadastro de  funcionario</h1>
 
 
   <!-- DataTales Example -->
   <div class="card shadow mb-4" style="padding: 30px;">
-    <form method="post" th:action="@{'/' + ${funcionario.idFun} + '/alterarfuncionario'}" style="margin: 10px"
+    <form method="post" th:action="@{'/' + ${funcionario.idFun} + '/alterarfun'}" style="margin: 10px"
       onsubmit="return confirm ('Confirma a ação ?')">
       
       <div class="form-group">
@@ -46,6 +46,6 @@
 </div>
 <!-- /.container-fluid -->
 
-<div th:replace="partes-compartilhadas/footer"></div>
+<div th:replace="partes/footer"></div>
 <!--Parte que importa o html responsavel pela parte de baixo das paginas-->
 

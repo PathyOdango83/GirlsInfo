@@ -36,7 +36,7 @@
                                                   <td th:text="${funcionario.cargo}"></td>
                                             <td><a th:href="@{'/consultar-' + ${funcionario.idFun}}" class="btn btn-success btn-block" >Consultar</a></td>
                                             <td><a th:href="@{'/funcionario-' + ${funcionario.idFun}}" class="btn btn-warning btn-block" >Alterar</a></td>
-											 <td><a th:href="@{/deletar-funcionario/{idFun}(idFun=${funcionario.idFun})}" class="btn btn-danger btn-block"  onclick="return confirm ('Confirma a ação ?')">Excluir</a></td>
+											 <td><a th:href="@{/deletarfunc/{idFun}(idFun=${funcionario.idFun})}" class="btn btn-danger btn-block"  onclick="return confirm ('Confirma a ação ?')">Excluir</a></td>
 
                                         </tr>
                                     </tbody>

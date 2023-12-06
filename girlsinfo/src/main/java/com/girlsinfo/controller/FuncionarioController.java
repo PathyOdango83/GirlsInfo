@@ -24,12 +24,13 @@ public String Funcionario(Model model) {
 	return "/funcionario/listarfunc";
 }
 
-@GetMapping ("/Funcionario")
-public String Novo(Model model) {
+@GetMapping("/cadastro-funcionario")
+public String NovoFuncionario() {
 	return "/funcionario/funcionario";
 }
 
-@PostMapping(value="funcionario/funcionario")
+
+@GetMapping(value="funcionario/novo")
 public ModelAndView FuncionarioModel(FuncionarioModel funcionario) {
 	ModelAndView mv = new ModelAndView("redirect:/funcionario");
 	Funcionariorepository.save(funcionario);
@@ -38,7 +39,7 @@ public ModelAndView FuncionarioModel(FuncionarioModel funcionario) {
 }
 
 @SuppressWarnings("deprecation")
-@GetMapping("/deletar-funcionario/{idFun}")
+@GetMapping("/deletarfunc/{idFun}")
 public String Deletar (FuncionarioModel funcionario,@PathVariable("idFun") long idFun ) {
 funcionario = (FuncionarioModel)this.Funcionariorepository.getOne(idFun);
 this.Funcionariorepository.delete(funcionario);
