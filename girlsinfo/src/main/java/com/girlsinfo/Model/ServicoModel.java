@@ -1,6 +1,8 @@
 package com.girlsinfo.Model;
 
-import java.util.Date;
+
+
+import java.sql.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -31,10 +33,10 @@ public class ServicoModel {
 		@Column(name = "local")
 		private String local;
 
-		@Column(name = "cpfFunc")
+		@Column(name = "cpffunc")
 		private String cpfFuncionario;
 		
-		@Column(name = "nomeCliente")
+		@Column(name = "nomecliente")
 		private String nomeCliente;
 
 		public Long getId() {
