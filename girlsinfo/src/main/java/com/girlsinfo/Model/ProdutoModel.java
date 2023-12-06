@@ -1,6 +1,8 @@
 package com.girlsinfo.Model;
 
-import java.util.Date;
+
+
+import java.sql.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -24,7 +26,7 @@ public class ProdutoModel {
 	@Column(name = "tipo")
 	private String tipo;
 	
-	@Column(name = "dataEntra")
+	@Column(name = "dataentr")
 	private Date dataEntra;
 
 	@Column(name = "qtdade")
