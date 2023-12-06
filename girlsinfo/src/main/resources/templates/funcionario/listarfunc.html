@@ -1,0 +1,50 @@
+<div th:replace="partes/topo"></div><!--Parte que importa o html responsavel pelo topo das paginas-->
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Tabela  de funcionários</h1>
+                    <p class="mb-4"> Lista de Colaboradores</p>
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <a href="/funcionario" class="btn btn-primary" style="margin-right: 20px;">Novo</a>
+                            <h6 class="m-0 font-weight-bold text-primary" style="display: inline-block;">Lista de funcionario</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                        <!--    <th>Id</th> -->
+                                            <th>Nome</th>                                  
+                                            <th>CPF</th>
+                                            <th>Data de nascimento</th>
+                                            <th>Cargo</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                  		
+                                    </tfoot>
+                                    <tbody>
+                                              <tr th:each="funcionario : ${funcionario}">
+                                                  <td th:text="${funcionario.nome}"></td>
+                                                  <td th:text="${funcionario.cpf}"></td>
+                                                  <td th:text="${funcionario.datNasc}"></td>
+                                                  <td th:text="${funcionario.cargo}"></td>
+                                            <td><a th:href="@{'/consultar-' + ${funcionario.idFun}}" class="btn btn-success btn-block" >Consultar</a></td>
+                                            <td><a th:href="@{'/funcionario-' + ${funcionario.idFun}}" class="btn btn-warning btn-block" >Alterar</a></td>
+											 <td><a th:href="@{/deletar-funcionario/{idFun}(idFun=${funcionario.idFun})}" class="btn btn-danger btn-block"  onclick="return confirm ('Confirma a ação ?')">Excluir</a></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+                <div th:replace="partes/footer"></div><!--Parte que importa o html responsavel pela parte de baixo das paginas-->

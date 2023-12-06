@@ -10,14 +10,14 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" th:href="@{/css/style.css}">
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-			 <div class="logo"><img th:src="@{/images/logo.png}" alt="logo" />
-
+			 <div class="logo"><img th:src="@{/images/logo.png}" style="margin-left:-250px; width:350px; height: 220px; margin-bottom:-80px; ;" alt="logo" />
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 					 <a class="navbar-brand" th:href="@{/login}">Login</a>
@@ -50,38 +50,32 @@
         </nav>
         <!-- Header-->
         <header class="bg-dark py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-                    <h1 class="display-4 fw-bolder">Em destaque:</h1>
-                    <p class="lead fw-normal text-white-50 mb-0"> Confira  nossas promoções</p>
-                </div>
-            </div>
-				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-	  <ol class="carousel-indicators">
-		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="1" ></li>
-		<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-	  </ol>
-	  <div class="carousel-inner">
-		<div class="carousel-item active">
-		  <img class="d-block w-100" src="images/banner1.png" width="800px" height="400px" syle="align:center;" alt="Primeiro Slide">
-		</div>
-		<div class="carousel-item">
-		  <img class="d-block w-100" src="images/banner2.png" width="800px" height="400px"  alt="Segundo Slide">
-		</div>
-		<div class="carousel-item">
-		  <img class="d-block w-100" src="images/pc3.jpg" width="100px" height="100px"  alt="Terceiro Slide">
-		</div>
-	  </div>
-	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Anterior</span>
-	  </a>
-	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Próximo</span>
-	  </a>
-	  	</div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/banner1.png" width="600px"h height="300px"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100"src="images/banner2"  alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">próximo</span>
+  </button>
+</div>
 	</div>
         </header>
         <!-- Section-->

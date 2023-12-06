@@ -1,0 +1,51 @@
+
+
+<div th:replace="partes/topo"></div>
+
+<!--Parte que importa o html responsavel pelo topo das paginas-->
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+  <!-- Page Heading -->
+  <h1 class="h3 mb-2 text-gray-800">Alterar funcionario</h1>
+
+
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4" style="padding: 30px;">
+    <form method="post" th:action="@{'/' + ${funcionario.idFun} + '/alterarfuncionario'}" style="margin: 10px"
+      onsubmit="return confirm ('Confirma a ação ?')">
+      
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" th:value="${funcionario?.nome}" placeholder="Digite o nome aqui" required>
+      </div>
+      
+     <div class="form-group">
+      <label for="cpf">CPF</label>
+      <input  type="text"class="form-control" id="cpf" name="cpf" th:value="${funcionario?.cpf}" placeholder="Digite o cpf" maxlength="11" required>
+     </div>
+  
+       <div class="form-group">
+        <label for="data Nascimento">Data de nascimento</label>
+        <input type="text" class="form-control" id="datNasc" name="datNasc" th:value="${funcionario?.datNasc}" placeholder="digite sua data de nascimento"  required>
+      </div>
+            
+      <div class="form-group">
+        <label for="endereco">Cargo</label>
+        <input type="text" class="form-control" id="cargo" name="cargo" th:value="${funcionario?.cargo}" placeholder="digite o  cargo" required>
+      </div>
+      
+      
+  <br>
+  <br>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+  </div>
+
+</div>
+<!-- /.container-fluid -->
+
+<div th:replace="partes-compartilhadas/footer"></div>
+<!--Parte que importa o html responsavel pela parte de baixo das paginas-->
+
