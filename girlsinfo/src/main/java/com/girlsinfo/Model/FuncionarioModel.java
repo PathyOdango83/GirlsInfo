@@ -1,6 +1,6 @@
 package com.girlsinfo.Model;
 
-import java.util.Date;
+import java.sql.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -9,9 +9,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-
 @Entity
-@Table(name = "funcioanrio" , schema = "girlsinfo")
+@Table(name = "funcionario" , schema = "girlsinfo")
 public class FuncionarioModel {
 
 	@Id
@@ -25,8 +24,8 @@ public class FuncionarioModel {
 	@Column(name = "nome")
 	private String nome;
 	
-	@Column(name = "datNasc")
-	private Date dataNac;
+	@Column(name = "datnasc")
+	private Date dataNasc;
 		
 	@Column(name = "cargo")
 	private String cargo;
@@ -61,12 +60,16 @@ public class FuncionarioModel {
 		this.nome = nome;
 	}
 
-	public Date getDataNac() {
-		return dataNac;
+
+
+
+
+	public java.sql.Date getDataNasc() {
+		return dataNasc;
 	}
 
-	public void setDataNac(Date dataNac) {
-		this.dataNac = dataNac;
+	public void setDataNasc(Date dataNasc) {
+		this.dataNasc = dataNasc;
 	}
 
 	public String getCargo() {

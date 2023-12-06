@@ -30,9 +30,9 @@ public String NovoFuncionario() {
 }
 
 
-@GetMapping(value="funcionario/novo")
+@PostMapping(value="/funcionario/novo")
 public ModelAndView FuncionarioModel(FuncionarioModel funcionario) {
-	ModelAndView mv = new ModelAndView("redirect:/funcionario");
+	ModelAndView mv = new ModelAndView("redirect:/");
 	Funcionariorepository.save(funcionario);
 	
 	return mv;

@@ -12,7 +12,7 @@
     
     <div class="container_form">
         <h1>Cadastro de Funcionários</h1>
-        <form method="post" th:action="@{funcionario/funcionario/novo}"  style="margin: 10px" onsubmit="return confirm ('Confirma a ação ?')" th:object="${FuncionarioModel}">
+        <form method="post" th:action="@{/funcionario/novo}"  style="margin: 10px" onsubmit="return confirm ('Confirma a ação ?')" th:object="${FuncionarioModel}">
           
             
             <div class="form_grupo">
@@ -27,7 +27,7 @@
 
             <div class="form_grupo">
                 <label for="datNasc" class="form_label">Data de Nascimento:</label>
-                <input type="date" name="datNasc" class="form_input" id="datNasc" placeholder="Insira aqui a data de nascimento" required>
+                <input type="date" name="dataNasc" class="form_input" id="dataNasc" placeholder="Insira aqui a data de nascimento" required>
             </div>
 
             <div class="form_grupo">
